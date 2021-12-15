@@ -75,12 +75,14 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
 /* hero section */
 .section.hero{
     position: relative;
+    flex-direction: row;
 }
 
 .hero-container {
@@ -96,7 +98,6 @@ h1,h2,h3,h4,h5,h6 {
     color: black;
     font-size: 1.2rem;
     margin: 50px 0;
-
 }
 
 
@@ -118,11 +119,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* about section */
-.about {
-    display: flex;
-    flex-direction: column;
-    background-color: plum;
-}
 .heading {
     text-transform: capitalize;
     font-family: 'Playfair Display', serif;
@@ -130,8 +126,8 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
 }
-.about-text {
-    font-size: 1.2rem;
+.intro-text {
+    font-size: 1rem;
     text-align: center;
     margin: 20px;
 }
@@ -158,10 +154,6 @@ h1,h2,h3,h4,h5,h6 {
 } 
 
 /* skills section */
-.skills {
-    display: flex;
-    flex-direction: column;
-}
 .skill-container {
     position: relative;
     margin-top: 100px;
@@ -179,3 +171,5 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', serif;
     
 }
+
+/* project section */
