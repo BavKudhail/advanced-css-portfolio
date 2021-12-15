@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
     align-items: center;
     /* below is code for a glass effect*/
-    background: linear-gradient(130deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    background: linear-gradient(130deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     backdrop-filter: blur(10px);
     border: 1px solid white;
     box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
@@ -44,7 +44,6 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 3%;
 }
 .nav-container{
-    border: 1px solid black;
     display: flex;
     list-style: none;
 }
@@ -52,5 +51,11 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 3%;
 }
 .nav-link {
+    color: black;
     padding: 1rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
 }
