@@ -9,7 +9,7 @@
 }
 
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -120,7 +120,6 @@ h1,h2,h3,h4,h5,h6 {
 .about {
     display: flex;
     flex-direction: column;
-    background-color: plum;
 }
 .heading {
     text-transform: capitalize;
@@ -132,7 +131,7 @@ h1,h2,h3,h4,h5,h6 {
 .about-text {
     font-size: 1.2rem;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
 }
 .about-image {
     border-radius: 50%;
@@ -140,7 +139,7 @@ h1,h2,h3,h4,h5,h6 {
 }
  .about-container {
     padding: 0 15%;
-    margin: 20px;
+    margin: 50px;
     width: 100%;
     display: grid;
     grid-template-columns:40% 60%;
@@ -155,8 +154,3 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 30px;
     margin-bottom: 50pxkk;
 } 
-
-/* skill-set section */
-.skill-section{
-
-}
