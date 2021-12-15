@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     /* below is code for a glass effect*/
     background: linear-gradient(130deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     backdrop-filter: blur(10px);
@@ -60,6 +61,9 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 500;
+}
+.nav-link:hover{
+    color: #4051d0;
 }
 /* general section */
 
