@@ -173,12 +173,49 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* project section */
+/* main project grid */
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
 }
+.project-container .large {
+    grid-column: span 2;
+    border: 1px solid black;
+}
 
+/* other project grid */
 .subheading {
     font-size: 2rem;
+}
+.archive-project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    margin: 100px 0;
+}
+.archive-project-card{
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.archive-project-title{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.more-btn {
+    padding: 12px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #4051d0;;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
 }
