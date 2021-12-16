@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6 {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,6 @@ h1,h2,h3,h4,h5,h6 {
     backdrop-filter: blur(10px);
     border: 1px solid white;
     box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.1);
-
 }
 #logo {
     text-transform: capitalize;
@@ -65,10 +64,14 @@ h1,h2,h3,h4,h5,h6 {
     color: #4051d0;
 }
 
+
+
 /* general section */
 
 .section {
     width: 100%;
+    /* min-height = 100% view hight - 55px ( fixed navbar height) */
+    min-height: calc(100vh - 55px);
     height: auto;
     margin-top: 100px;
     padding: 50px 10%;
@@ -260,6 +263,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* footer */
+.footer {
+    width: 100vw;
+    padding: 30px;
+    background-color: lightblue;
+}
+
 .social-icons{
     display: flex;
     justify-content: center;
