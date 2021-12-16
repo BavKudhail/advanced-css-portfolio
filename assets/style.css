@@ -219,3 +219,42 @@ h1,h2,h3,h4,h5,h6 {
     border: none;
     border-radius: 30px;
 }
+
+/* conact section */
+.contact-form {
+    width: 100%;
+    margin-top: 100px;
+}
+.contact-form input, .message{
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    margin: 20px 0;
+    text-transform: capitalize;
+
+    /* glass effect */
+    background: linear-gradient(130deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.message {
+    height: 200px;
+}
+.name {
+    display: flex;
+}
+.name input {
+    width: 50%;
+    margin: 0;
+}
+.contact-btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.25rem 5rem;
+    background-color: #4051d0;;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+}
