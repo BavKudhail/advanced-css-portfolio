@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+
     <!-- header -->
         <header>
             <nav class="navbar">
@@ -30,22 +31,41 @@
                     </li>
                 </ul>
             </nav>
+            
+
         </header>
 
-    <!-- hero -->  
-        <section class="section hero" id="hero">
+    <!-- hero section -->  
+        <section class="section" id="hero">
             <div class="hero-container">
-                <div class="image-container">
-                    <img class="hero-image" src="https://via.placeholder.com/200" alt="">
-                </div>
+                <img class="hero-avatar" src="./assets/images/avatar_image_square.png" alt="">
                 <h1 class="hero-heading">hi, <br> i'm bav kudhail</h1>
                 <p class="hero-text">I design and build things for the web and love what I do.</p>
                 <a href="#contact" class="btn hero-btn">say hello!</a>
             </div>
+                <div class="socials">
+                    <div>TW</div>
+                    <div>Li</div>
+                    <div>GH</div>
+                </div>
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- about --> 
-        <section class="section about" id="about">
+        <section class="section" id="about">
             <div class="container">
                 <h2 class="heading">about me</h2>
                 <p class="intro-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, sapiente.</p>
@@ -65,59 +85,101 @@
         </section>
 
     <!-- skills/services -->
-        <section class="section skills">
+        <section class="section">
             <div class="container">
                 <h2 class="heading">skills</h2>
-                <p class="intro-text">Here are some languages and frameworks I know</p>
+                <p class="intro-text">Here are some languages I know</p>
             </div>
             <div class="skill-container">
-                <div class="card">
+                <div class="skill-card">
                     <p class="skill">HTML</p>
                 </div>
-                <div class="card">
+                <div class="skill-card">
                     <p class="skill">CSS</p>
                 </div>
-                <div class="card">
+                
+                <div class="skill-card">
                     <p class="skill">Javascript</p>
                 </div>
-                <div class="card">
+                <div class="skill-card">
+                    <p class="skill">Javascript</p>
+                </div>
+                <div class="skill-card">
                     <p class="skill">React</p>
                 </div>
-                <div class="card">
-                    <p class="skill">MongoDB</p>
-                </div>
-                <div class="card">
+                <div class="skill-card">
                     <p class="skill">And more!</p>
                 </div>
             </div>
         </section>
 
     <!-- projects -->
-        <section class="section projects" id="projects">
+        <section class="section" id="projects">
             <div class="container">
                 <h2 class="heading">projects</h2>
                 <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, rem.</p>
             </div>
 
             <div class="project-container">
-                <div class="project-card large">
-                    <img src="https://via.placeholder.com/350" alt="">
-                    <h3 class="project-title">project title</h3>
+                <div class="project-card project-large">
+                    <img src="./assets/images/project-1.JPG" alt="">
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://picsum.photos/200/300" alt="">
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://picsum.photos/400/300" alt="">
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="https://via.placeholder.com/350" alt="">
-                    <h3 class="project-title">project title</h3>
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="https://via.placeholder.com/350" alt="">
-                    <h3 class="project-title">project title</h3>
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="https://via.placeholder.com/350" alt="">
-                    <h3 class="project-title">project title</h3>
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
                 </div>
-            </div>
-            <button class="more-btn">show more</button
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350" alt="">
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350" alt="">
+                    <div class="project-content">
+                        <h3 class="project-title">project title</h3>
+                        <p class="project-description">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+                <div>
+                <button class="btn">show more</button
+                </div> 
         </section>
 
     <!-- contact -->   
@@ -132,7 +194,7 @@
                 </div>
                 <input type="email" name="" id="" placeholder="email">
                 <textarea class="message" placeholder="message"></textarea>
-                <button class="contact-btn">send message!</button>
+                <button class="btn">send message!</button>
             </div>        
         </section>
         </section>
@@ -151,12 +213,18 @@
             <a href="#">oth</a>
         </div>
 
-
         
     <!-- footer -->
         <footer class="footer">
             <p>Made by Bav Kudhail</p>
         </footer>
+        <!--  -->
+        
+
+
+
+
+
         <script src="./assets/app.js"></script>
 </body>
 </html>
