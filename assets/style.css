@@ -100,12 +100,13 @@ container not currently in use
   background-color: #ca299d;
 }
 
-
-
-
-
 /* ============ Hero Styling ================== */
-
+.section.hero {
+  margin-top: 0;
+}
+.accent-text {
+  color: #4051d0;
+}
 .hero-heading {
   font-size: 5rem;
   color: black;
@@ -118,6 +119,7 @@ container not currently in use
   margin: 50px 0;
 }
 .hero-avatar {
+  margin: 50px;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -125,6 +127,9 @@ container not currently in use
 }
 
 /* ============ About Styling ================== */
+
+.section.about {
+}
 
 /* about section */
 .heading {
@@ -139,28 +144,49 @@ container not currently in use
   text-align: center;
   margin: 20px;
 }
-.about-image {
-  border-radius: 50%;
-  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.2);
-}
 .about-container {
   /* set width to 100% of screen size */
   width: 100%;
-  padding: 0 15%;
-  margin: 20px;
+  background: lightblue;
+  margin: 20px 0;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
 }
-.left,
-.right {
-  position: relative;
+.about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
 }
 .about-p {
-  font-size: 1rem;
+  border: 1px solid black;
+  font-size: 0.85rem;
   line-height: 30px;
-  margin-bottom: 50pxkk;
 }
+
+/* exp */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 80px;
+}
+.about-heading {
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+}
+.about-section p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.about-img {
+  width: 300px;
+  border-radius: 50%;
+}
+/*  */
 
 /* skills section */
 .skill-container {
