@@ -12,39 +12,28 @@
         <header>
             <nav class="navbar">
                 <h1 id="logo">b</h1>
-                <button class="hamburger active">
+                <button class="hamburger-btn active">
                     <span class="menu"></span>
                 </button>
                 <ul class="nav-container visible">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">home</a>
+                        <a href="#hero" class="nav-link">home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">about</a>
+                        <a href="#about" class="nav-link">about</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">projects</a>
+                        <a href="#projects" class="nav-link">projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">contact</a>
+                        <a href="#contact" class="nav-link">contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-
-
-
-
-
-
-
-
-
-
-
     <!-- hero -->  
-        <section class="section hero">
+        <section class="section hero" id="hero">
             <div class="hero-container">
                 <div class="image-container">
                     <img class="hero-image" src="https://via.placeholder.com/200" alt="">
@@ -56,7 +45,7 @@
         </section>
 
     <!-- about --> 
-        <section class="section about">
+        <section class="section about" id="about">
             <div class="container">
                 <h2 class="heading">about me</h2>
                 <p class="intro-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, sapiente.</p>
@@ -104,7 +93,7 @@
         </section>
 
     <!-- projects -->
-        <section class="section projects">
+        <section class="section projects" id="projects">
             <div class="container">
                 <h2 class="heading">projects</h2>
                 <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, rem.</p>
@@ -127,46 +116,9 @@
                     <img src="https://via.placeholder.com/350" alt="">
                     <h3 class="project-title">project title</h3>
                 </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/350" alt="">
-                    <h3 class="project-title">project title</h3>
-                </div>
             </div>
+            <button class="more-btn">show more</button
         </section>
-
-        <section class="section">
-            <div class="container">
-                <h3 class="subheading">other projects</h4>
-            </div>
-            <div class="archive-project-container">
-                <div class="archive-project-card">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h3 class="archive-project-title">project-title</h3>
-                </div>
-                <div class="archive-project-card">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h3 class="archive-project-title">project-title</h3>
-                </div>
-                <div class="archive-project-card">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h3 class="archive-project-title">project-title</h3>
-                </div>
-                <div class="archive-project-card">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h3 class="archive-project-title">project-title</h3>
-                </div>
-                <div class="archive-project-card">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h3 class="archive-project-title">project-title</h3>
-                </div>
-                <div class="archive-project-card">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h3 class="archive-project-title">project-title</h3>
-                </div>
-            </div>
-                <button class="more-btn">show more</button
-        </section>
-
 
     <!-- contact -->   
         <section class=" section"> 
@@ -174,31 +126,36 @@
                 <h2 class="heading">say hello</h2>
                 <p class="intro-text">I am always open to design and development opportunities.</p>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" id="contact">
                 <div class="name">
-                    <input type="text" placeholder="first name">
-                </div>
-                <div class="name">
-                    <input type="text" placeholder="last name">
+                    <input type="text" placeholder="Name">
                 </div>
                 <input type="email" name="" id="" placeholder="email">
                 <textarea class="message" placeholder="message"></textarea>
                 <button class="contact-btn">send message!</button>
-            </div>            
+            </div>        
         </section>
-
+        </section>
+        <div class="social-icons">
+            <div>
+                <span>bavkudhail@gmail.com</span>
+                <span>bavkudhail.co.uk</span>
+                <span>07446835912</span>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href="#"><span><i class="fab fa-github"></i></span></a>
+            <a href="#">tw</a>
+            <a href="#">ins</a>
+            <a href="#">oth</a>
+        </div>
 
 
         
     <!-- footer -->
         <footer class="footer">
-            <div class="social-icons">
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href="#"><span><i class="fab fa-github"></i></span></a>
-                <a href="#">tw</a>
-                <a href="#">ins</a>
-                <a href="#">oth</a>
-            </div>
+            <p>Made by Bav Kudhail</p>
         </footer>
         <script src="./assets/app.js"></script>
 </body>

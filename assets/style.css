@@ -76,7 +76,7 @@ h6 {
   /* min-height = 100% view hight - 55px ( fixed navbar height) */
   min-height: calc(100vh - 55px);
   height: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 50px 10%;
   display: flex;
   justify-content: center;
@@ -159,8 +159,7 @@ h6 {
 
 /* skills section */
 .skill-container {
-  position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
@@ -169,34 +168,28 @@ h6 {
   height: 150px;
   width: 150px;
   border: 1px solid black;
+  /* below-code formats card-text */
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
 /* project section */
-/* main project grid */
+
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 50px;
 }
 .project-container .large {
-  grid-column: span 2;
-  border: 1px solid black;
+  grid-column: span 3;
+  background: lightgreen;
 }
 
-/* other project grid */
-.subheading {
-  font-size: 2rem;
-}
-.archive-project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
-  margin: 100px 0;
-}
+
 .archive-project-card {
   position: relative;
   display: block;
@@ -226,7 +219,7 @@ h6 {
 /* conact section */
 .contact-form {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .contact-form input,
 .message {
@@ -245,13 +238,6 @@ h6 {
 .message {
   height: 200px;
 }
-.name {
-  display: flex;
-}
-.name input {
-  width: 50%;
-  margin: 0;
-}
 .contact-btn {
   font-weight: 500;
   text-transform: uppercase;
@@ -269,11 +255,16 @@ h6 {
   padding: 30px;
   background-color: lightblue;
 }
+.contact-information {
+  background: lightcoral;
+  height: 5rem;
+  width: 100%;
+}
 
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .social-icons a {
   width: 40px;
@@ -286,27 +277,35 @@ h6 {
   border-radius: 50%;
 }
 
-/* design for mobile view */
+@media (max-width: 992px) {
+  body {
+    background: lightcyan;
+  }
+}
 
 @media (max-width: 768px) {
   body {
     font-size: 0.875rem;
+    background: lightgreen;
   }
 
   /* hamburger menu */
   /* hamburger menu created using the below tutorial as a reference: 
 https://www.youtube.com/watch?v=OFKBep95lb4 */
-  .hamburger {
+  .hamburger-btn {
     position: absolute;
     right: 5vw;
-    width: 35px;
     cursor: pointer;
     background: none;
     border: none;
+    /* background: #ffffff; */
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
   }
 
-  .hamburger .menu,
-  .hamburger:after {
+  .hamburger-btn .menu,
+  .hamburger-btn:after {
     content: "";
     display: block;
     height: 3px;
@@ -315,20 +314,21 @@ https://www.youtube.com/watch?v=OFKBep95lb4 */
     transition: 0.4s;
   }
 
-  /* PROBLEM IN NAV VISBILITY REQUIRES RESOLVING */
+  /* PROBLEM IN NAV VISBILITY REQUIRES RESOLVING - for time being I have switched opacity settings in nav container*/
 
   /* 'active' hamburger menu styling */
   /* 'transform' property below rotates 'active' hamburger class to 90 degrees creating a + icon */
-  .hamburger.active .menu {
-    transform: rotate(90deg) translate(10px, 0px);
+  .hamburger-btn.active .menu {
+    transform: rotate(90deg) translate(5px, 0px);
     transition: 0.4s;
-    background-color: #4051d0;
+    background-color: #000000;
   }
-  .hamburger.active::after {
-    transform: rotate(180deg) translate(0px, 0px);
+  .hamburger-btn.active::after {
+    transform: rotate(180deg) translate(0px, 3px);
     transition: 0.4s;
-    background-color: #4051d0;
+    background-color: #000000;
   }
+
   /* mobile navigation menu formatting */
   .nav-container {
     position: absolute;
@@ -337,15 +337,77 @@ https://www.youtube.com/watch?v=OFKBep95lb4 */
     width: 100%;
     flex-direction: column;
     transition: 0.5s;
-    opacity: 0;
     background: #fff;
+    display: block;
   }
   .nav-container.visible {
-    opacity: 1;
+    display: none;
   }
   .nav-link {
     text-align: center;
     display: block;
     height: 60px;
+  }
+  /* hero-section */
+  .hero {
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  .hero-image {
+    width: 150px;
+    margin: 50px;
+  }
+  .hero-container {
+    width: 70%;
+    min-width: 350px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-heading {
+    font-size: 4.5rem;
+  }
+
+  /* about section */
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    margin: auto;
+    width: 50%;
+    min-width: 320px;
+  }
+
+  /* skills section */
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* projects section */
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .archive-project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up */
+@media (max-width: 576px) {
+  body {
+    font-size: 0.75rem;
+    background: lightcoral;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 0fr;
+    grid-gap: 30px;
+  }
+  .project-container .large {
+    grid-column: span 1;
+    border: 1px solid black;
   }
 }
