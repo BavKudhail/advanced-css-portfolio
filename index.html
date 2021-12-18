@@ -9,7 +9,8 @@
 </head>
 <body>
     <!-- header -->
-        <nav class="navbar">
+    <header>
+        <nav>
             <div class="logo">B</div>
             <button class="hamburger-btn active">
                 <span class="menu"></span>
@@ -21,6 +22,7 @@
                 <li> <a href="#contact">contact</a></li>
             </ul>
         </nav>
+    </header>
 
     <!-- hero section -->  
         <section class="hero" id="home">
@@ -140,9 +142,6 @@
                     </div>
                 </div>
             
-
-
-
                 <div class="project-card">
                     <img class="project-image" src="https://picsum.photos/300" alt="placeholder project image">
                     <div class="project-information">
@@ -195,26 +194,25 @@
 
     <!-- contact section -->   
  
-<!-- form -->
-<section class="sub-section-alt">
-    <h4 class="sub-heading">say hello</h4>
-    <p class="intro-text">I am always open to design and development opportunities.</p>
-    <form class="contact-form" action="https://formsubmit.co/bavkudhail@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" placeholder="Name">
-        <input type="hidden" name="_subject" value="New submission!">
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="hidden" name="_next" target="blank" value="https://bavkudhail.github.io/advanced-css-portfolio/pages/thankyou.html">
-        <input type="text" name="name" class="message" placeholder="Message" required>
-        <button class="btn" type="submit">Send</button>
-    </form>
-</section>
+        <section id="contact" class="sub-section-alt">
+            <h4 class="sub-heading">say hello</h4>
+            <p class="intro-text">I am always open to design and development opportunities.</p>
+            <form class="contact-form" action="https://formsubmit.co/bavkudhail@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" placeholder="Name">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="hidden" name="_next" target="blank" value="https://bavkudhail.github.io/advanced-css-portfolio/pages/thankyou.html">
+                <input type="text" name="name" class="message" placeholder="Message" required>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </section>
 
     <!-- footer -->
-        <footer class="footer">
-            <p>drop me a message! bavkudhail@gmail.com</p>
-        </footer>
-        <!-- javascript link -->
-        <script src="./assets/app.js"></script>
+    <footer class="footer">
+        <p>drop me a message! bavkudhail@gmail.com</p>
+    </footer>
+    <!-- javascript link -->
+    <script src="./assets/app.js"></script>
 </body>
 </html>
