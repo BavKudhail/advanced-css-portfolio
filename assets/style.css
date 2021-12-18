@@ -2,11 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
 
+/* colour scheme  */
 :root {
   --primaryColor1: #0c0e3f;
-  --primaryColor2: #171b85;
+  --primaryColor2: #262de2;
   --secondaryColor1: #eb59a7;
-  --secondaryColor2: #922760;
+  --secondaryColor2: #d337b9;
 }
 
 * {
@@ -15,6 +16,7 @@
   padding: 0;
 }
 body {
+  /* this sets the default font for the body-element */
   font-family: "Roboto", sans-serif;
 }
 footer {
@@ -36,15 +38,10 @@ h1 {
 h2 {
   font-size: 3rem;
 }
-
-p {
-  font-weight: 100;
-}
-
 /* ============ Header Section ================== */
 .logo {
   color: var(--secondaryColor1);
-  font-family: playfair disney;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 1.5rem;
   padding-left: 1vw;
@@ -76,8 +73,8 @@ li {
   font-size: 0.75rem;
   text-transform: uppercase;
 }
-/* ============ Hero Section ================== */
 
+/* ============ Hero Section ================== */
 .hero {
   height: 100vh;
 }
@@ -94,7 +91,6 @@ li {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
 }
 .hero-text {
   margin-left: 50px;
@@ -105,7 +101,6 @@ li {
   color: var(--secondaryColor1);
 }
 .hero p {
-  font-weight: 500;
   font-size: 1.2rem;
   margin: 50px 0;
 }
@@ -122,10 +117,10 @@ li {
   border-radius: 30px;
 }
 .btn:hover {
-  background-color: #293488;
+  background-color: var(--primaryColor2);
 }
 .btn:active {
-  background-color: #ca299d;
+  background-color: var(--secondaryColor2);
 }
 .socials {
   padding-bottom: 200px;
@@ -159,7 +154,6 @@ li {
 .about-para {
   line-height: 1.25rem;
 }
-
 .about-me-image {
   width: 200px;
   border-radius: 50%;
@@ -286,8 +280,7 @@ hr {
 /* responsive design */
 @media (max-width: 992px) {
   /* hamburger menu created using the below tutorial as a reference: 
-https://www.youtube.com/watch?v=OFKBep95lb4
-code has been adjusted and re-designed for this portfolio */
+https://www.youtube.com/watch?v=OFKBep95lb4 */
   .hamburger-btn {
     display: block;
     position: absolute;
@@ -310,12 +303,12 @@ code has been adjusted and re-designed for this portfolio */
   .hamburger-btn.active .menu {
     transform: rotate(90deg) translate(5px, 0px);
     transition: 0.4s;
-    background-color: #ffffff;
+    background-color: var(--secondaryColor1);
   }
   .hamburger-btn.active::after {
     transform: rotate(180deg) translate(0px, 3px);
     transition: 0.4s;
-    background-color: #ffffff;
+    background-color: var(--secondaryColor1);
   }
   #nav-list {
     display: none;
