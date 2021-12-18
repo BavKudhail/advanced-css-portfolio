@@ -45,7 +45,7 @@ p {
 nav {
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  height: 60px;
   align-items: center;
   background-color: #0c0e3f;
   color: white;
@@ -255,4 +255,63 @@ hr {
 }
 .message {
   height: 300px;
+}
+
+/* responsive design */
+@media (max-width: 992px) {
+  body {
+    font-size: 0.875rem;
+    background: lightgreen;
+  }
+  /* hamburger menu created using the below tutorial as a reference: 
+https://www.youtube.com/watch?v=OFKBep95lb4
+code has been adjusted and re-designed for this portfolio */
+  .hamburger-btn {
+    position: absolute;
+    right: 5vw;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+  }
+  .hamburger-btn .menu,
+  .hamburger-btn:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .hamburger-btn.active .menu {
+    transform: rotate(90deg) translate(5px, 0px);
+    transition: 0.4s;
+    background-color: #ffffff;
+  }
+  .hamburger-btn.active::after {
+    transform: rotate(180deg) translate(0px, 3px);
+    transition: 0.4s;
+    background-color: #ffffff;
+  }
+  #nav-list {
+    display: none;
+  }
+  #nav-list {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    flex-direction: column;
+    transition: 0.5s;
+    background: #0c0e3f;
+    display: block;
+  }
+  #nav-list.visible {
+    display: none;
+  }
+  #nav-list a {
+    text-align: center;
+    display: block;
+    height: 60px;
+  }
 }
