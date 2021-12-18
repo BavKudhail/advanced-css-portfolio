@@ -15,7 +15,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 ### Desktop Screenshot
 
 ![personal-portfolio-screenshot 1](https://raw.githubusercontent.com/BavKudhail/advanced-css-portfolio/main/assets/images/deployed-portfolio-desktop.JPG)
-![personal-portfolio-screenshot 2](https://raw.githubusercontent.com/BavKudhail/advanced-css-portfolio/main/assets/images/deployed-portfolio-desktop.JPG)
+![personal-portfolio-screenshot 2](https://raw.githubusercontent.com/BavKudhail/advanced-css-portfolio/main/assets/images/deployed-portfolio-desktop-3.JPG)
 
 ### Tablet Screenshot
 
@@ -38,18 +38,21 @@ Upon resizing the screen, the webpage adapts to the viewport.
 ```
 
 ## The Learning Loop
+
 ### Research Topics
-* CSS Flexbox
-* CSS Variables
-* HTML DOM
-* CSS Units
-* Media Queries
-* Using Markup language
-* UI Design
+
+- CSS Flexbox
+- CSS Variables
+- HTML DOM
+- CSS Units
+- Media Queries
+- Using Markup language
+- UI Design
 
 ## Installation
+
 The deployed application can be opened via the link: https://bavkudhail.github.io/advanced-css-portfolio/
 
 ## Credits
-Project conducted as part of The University of Birmingham Web-Development bootcamp.
 
+Project conducted as part of The University of Birmingham Web-Development bootcamp.
