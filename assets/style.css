@@ -213,6 +213,10 @@ li {
   color: #fff;
   border-radius: 30px;
 }
+.project-information a:hover {
+  background-color: #293488;
+}
+
 .project-links {
   display: flex;
   justify-content: center;
