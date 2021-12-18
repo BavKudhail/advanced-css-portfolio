@@ -12,7 +12,14 @@ I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
 
-![personal-portfolio-screenshot]()
+### Desktop Screenshot
+
+![personal-portfolio-screenshot 1](https://raw.githubusercontent.com/BavKudhail/advanced-css-portfolio/main/assets/images/deployed-portfolio-desktop.JPG)
+![personal-portfolio-screenshot 2](https://raw.githubusercontent.com/BavKudhail/advanced-css-portfolio/main/assets/images/deployed-portfolio-desktop.JPG)
+
+### Tablet Screenshot
+
+![personal-portfolio-screenshot 2](https://raw.githubusercontent.com/BavKudhail/advanced-css-portfolio/main/assets/images/responsive-design.JPG)
 
 ## Acceptance Criteria
 
@@ -28,6 +35,7 @@ The first application in the project section should appear larger than the rest.
 Upon clicking on the images of the application, that application is then deployed.
 
 Upon resizing the screen, the webpage adapts to the viewport.
+```
 
 ## The Learning Loop
 ### Research Topics
@@ -44,4 +52,4 @@ The deployed application can be opened via the link: https://bavkudhail.github.i
 
 ## Credits
 Project conducted as part of The University of Birmingham Web-Development bootcamp.
-```
+
