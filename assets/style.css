@@ -242,6 +242,14 @@ hr {
   text-transform: uppercase;
   font-weight: 500;
 }
+.thankyou-page {
+  background-color: #0c0e3f;
+  color: #eb59a7;
+  height: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* contact section */
 .contact-form {
