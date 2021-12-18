@@ -213,6 +213,10 @@ li {
   color: #fff;
   border-radius: 30px;
 }
+.project-links {
+  display: flex;
+  justify-content: center;
+}
 .subtext {
   margin: 20px;
   font-size: 0.9rem;
@@ -256,17 +260,17 @@ hr {
 .message {
   height: 300px;
 }
+.hamburger-btn {
+  display: none;
+}
 
 /* responsive design */
 @media (max-width: 992px) {
-  body {
-    font-size: 0.875rem;
-    background: lightgreen;
-  }
   /* hamburger menu created using the below tutorial as a reference: 
 https://www.youtube.com/watch?v=OFKBep95lb4
 code has been adjusted and re-designed for this portfolio */
   .hamburger-btn {
+    display: block;
     position: absolute;
     right: 5vw;
     cursor: pointer;
@@ -299,12 +303,15 @@ code has been adjusted and re-designed for this portfolio */
   }
   #nav-list {
     position: absolute;
+    padding-top: 50px;
     top: 60px;
     width: 100%;
     flex-direction: column;
     transition: 0.5s;
     background: #0c0e3f;
-    display: block;
+    display: flex;
+    align-items: center;
+    background-color: #eb59a7;
   }
   #nav-list.visible {
     display: none;
