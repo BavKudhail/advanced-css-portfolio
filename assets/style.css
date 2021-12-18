@@ -1,94 +1,118 @@
-/* google fonts */
+/* google fonts
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
 
 /* ============ Universal & Element Styling ================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-html {
-  /* scroll-behavior: smooth; */
-}
 body {
   font-family: "Roboto", sans-serif;
+}
+section {
+}
+footer {
+  background-color: #0c0e3f;
+  color: white;
+  text-align: center;
+  padding: 100px;
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: "Playfair Display", serif;
+  margin: 0;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  margin: 0;
+  font-weight: 100;
 }
 
 /* ============ Header Styling ================== */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 55px;
+nav {
   display: flex;
   justify-content: space-between;
+  height: 55px;
   align-items: center;
-  /* z-index ensures the navbar remains fixed at the top */
-  z-index: 10;
-
-  /* below is code for a glass effect*/
-  background: linear-gradient(130deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  backdrop-filter: blur(20px);
-  border: 1px solid white;
-  box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #0c0e3f;
+  color: white;
 }
-#logo {
-  text-transform: capitalize;
-  padding: 0 3%;
-}
-.nav-container {
+ul {
   display: flex;
-  list-style: none;
+  list-style-type: none;
+  width: 300px;
+  font-size: 30px;
+  justify-content: space-around;
 }
-.nav-container:last-child {
-  padding: 0 3%;
+ul.show {
+  display: block;
 }
-.nav-link {
-  color: black;
-  padding: 1rem;
+nav ul li a {
+  color: white;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-  font-weight: 500;
 }
-.nav-link:hover {
-  color: #4051d0;
-}
-
-/* ============ General Main Content ================== */
-
-.section {
-  width: 100%;
-  /* min-height = 100% view hight - 55px (fixed navbar height) */
-  min-height: calc(100vh - 55px);
-  margin-top: 50px;
-  padding: 50px 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+li {
+  text-decoration: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
-/* 
-container not currently in use
+
+/* ============ Hero Styling ================== */
+.hero {
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
 .hero-container {
-  width: 50%;
-} */
-
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c0e3f;
+  color: #fff;
+}
+.hero-avatar {
+  margin: 50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
+}
+.hero-text {
+  margin-left: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 200px;
+}
+.hero p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 50px 0;
+}
 .btn {
+  margin-top: 50px;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 1.25rem 5rem;
-  background-color: #4051d0;
+  background-color: #eb59a7;
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -99,94 +123,49 @@ container not currently in use
 .btn:active {
   background-color: #ca299d;
 }
-
-/* ============ Hero Styling ================== */
-.section.hero {
-  margin-top: 0;
+.socials {
+  padding-bottom: 200px;
 }
-.accent-text {
-  color: #4051d0;
+.social {
+  margin: 10px;
 }
-.hero-heading {
-  font-size: 5rem;
-  color: black;
-  text-transform: capitalize;
+.social-icon {
+  width: 30px;
+  height: 30px;
 }
-.hero-text {
-  color: black;
-  font-weight: 500;
-  font-size: 1.2rem;
-  margin: 50px 0;
-}
-.hero-avatar {
-  margin: 50px;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
-}
-
 /* ============ About Styling ================== */
 
-.section.about {
-}
 
-/* about section */
-.heading {
-  text-transform: capitalize;
-  font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
-  display: flex;
-  justify-content: center;
-}
-.intro-text {
-  font-size: 1rem;
-  text-align: center;
-  margin: 20px;
-}
-.about-container {
-  /* set width to 100% of screen size */
-  width: 100%;
-  background: lightblue;
-  margin: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.about-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 30px;
-  box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
-}
-.about-p {
-  border: 1px solid black;
-  font-size: 0.85rem;
-  line-height: 30px;
-}
 
-/* exp */
-.about-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 80px;
-}
-.about-heading {
-  text-transform: capitalize;
-  font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
-}
-.about-section p {
-  font-size: 1rem;
-  text-align: center;
-  margin: 20px 0;
-}
-.about-img {
-  width: 300px;
-  border-radius: 50%;
-}
-/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* skills section */
 .skill-container {
@@ -458,4 +437,4 @@ https://www.youtube.com/watch?v=OFKBep95lb4 */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */
