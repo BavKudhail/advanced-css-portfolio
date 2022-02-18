@@ -10,7 +10,6 @@
   </head>
   <body>
     <!-- header -->
-    <header>
       <nav>
         <div class="logo">B</div>
         <button class="hamburger-btn active">
@@ -23,7 +22,6 @@
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
-    </header>
     <!-- hero section -->
     <section class="hero" id="home">
       <div class="hero-container">
@@ -34,6 +32,7 @@
           </h1>
           <p>I design and build things for the web and love what I do.</p>
         </div>
+        <!-- image -->
         <div>
           <img
             class="hero-avatar"
@@ -52,17 +51,15 @@
       <div class="information">
         <h2 class="sub-heading">About Me</h2>
         <p class="section-intro">
-          Hello, My name is Bav Kudhail. I am a Web Developer & Designer.
+          Hi, My name is Bav Kudhail. I am a Web Developer & Designer.
         </p>
         <p class="about-para">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          incidunt dolor dignissimos illo iusto dicta debitis doloremque,
-          voluptate esse cum veritatis eaque expedita enim corrupti sed.
-          Accusamus ut voluptatem impedit!
+          <!-- insert statement here -->
         </p>
-      </div>
-      <div>
-          <img
+        <!-- image -->
+        <div>
+          <img 
+          style="padding: 1rem;"
             class="hero-avatar"
             src="./assets/images/avatar_image_square.png"
             alt="hero-image avatar"
@@ -70,12 +67,12 @@
         </div>
       </div>
       <div>
-          <button class="btn">View Resume</button>
+          <button class="resume-btn">View Resume</button>
       </div>
     </section>
 
     <!-- skills section -->
-    <section class="sub-section-alt accent-section">
+    <!-- <section class="sub-section-alt accent-section">
       <div class="information">
         <h2 class="sub-heading">Skills</h2>
         <p class="section-intro">
@@ -132,18 +129,19 @@
           <p>And more!</p>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <!-- project section -->
-    <section class="sub-section-alt" id="projects">
+    <section class="sub-section-alt accent-section" id="projects">
       <h2 class="sub-heading">Projects</h2>
-      <p class="section-intro">Here are some of the things I have built!.</p>
+      <p style="margin-top: 1rem;">Check out what I've built!</p>
       <div class="project-container">
-        <!-- project card -->
-        <div class="project-card larger grow">
-          <!-- project image -->
-          <a
+        <div class="project-card grow">
+            <!-- project image -->
+            <div>
+                <a
             target="blank"
-            href="https://bavkudhail.github.io/advanced-css-portfolio/"
+            href="https://bavkudhail.github.io/meal-planner-project-1/"
           >
             <img
               class="project-image-large"
@@ -151,13 +149,15 @@
               alt="bav kudhail first portfolio screenshot"
             />
           </a>
-          <!-- text container -->
+            </div>
+            <!-- project text -->
           <div class="project-information">
             <h3>Macro Meals</h3>
             <p class="subtext">
               For our first project, we developed an application that takes in user values and generates a daily calorie requirement based on the users desired health goal. The app then presents the user with recipes that will allow the user to meet their daily calorie requirements.
             </p>
             <hr />
+            <!-- project links -->
             <div class="project-links">
               <p class="subtext">
                 <a
@@ -181,10 +181,9 @@
         </div>
         <!-- project card -->
         <div class="project-card larger grow">
-          <!-- project image -->
           <a
             target="blank"
-            href="https://bavkudhail.github.io/advanced-css-portfolio/"
+            href="https://bavkudhail.github.io/weather-dashboard/"
           >
             <img
               class="project-image-large"
@@ -192,7 +191,6 @@
               alt="bav kudhail first portfolio screenshot"
             />
           </a>
-          <!-- text container -->
           <div class="project-information">
             <h3>Weather Dashboard</h3>
             <p class="subtext">
@@ -219,13 +217,11 @@
               </p>
             </div>
           </div>
-        </div>
-        <!-- project card -->
+        </div> 
         <div class="project-card larger grow">
-          <!-- project image -->
           <a
             target="blank"
-            href="https://bavkudhail.github.io/advanced-css-portfolio/"
+            href="https://bavkudhail.github.io/code-quiz-app/"
           >
             <img
               class="project-image-large"
@@ -233,7 +229,6 @@
               alt="bav kudhail first portfolio screenshot"
             />
           </a>
-          <!-- text container -->
           <div class="project-information">
             <h3>Code Quiz!</h3>
             <p class="subtext">
@@ -261,20 +256,17 @@
             </div>
           </div>
         </div>
-    </section>
+    </section> 
 
     <!-- contact section -->
 
-    <section id="contact" class="sub-section-alt accent-section">
+    <section id="contact" class="sub-section-alt accent-section-pink">
       <h4 class="sub-heading">say hello</h4>
       <br>
-      <p class="intro-text">
+      <p style="margin: 1rem;" class="intro-text">
         I am always open to design and development opportunities.
       </p>
-      <!-- social icons -->
-      <!-- social icons -->
         <div class="socials-contact">
-            <!-- github -->
             <div class="icon-container grow">
             <a
               href="https://github.com/BavKudhail"
@@ -283,7 +275,7 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="#eb59a7"
+                fill="#0c0e3f"
                 width="50"
                 height="50"
                 viewBox="0 0 24 24"
@@ -294,23 +286,21 @@
               </svg>
             </a>
             </div>
-            <!-- linkedin -->
             <div class="icon-container grow">
               <a href="" class="social">
                   <svg 
                   xmlns="http://www.w3.org/2000/svg" 
-                  fill="#eb59a7"
+                  fill="#0c0e3f"
                   width="50" 
                   height="50" 
                   viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </a>
           </div>
-          <!-- email -->
           <div class="icon-container grow" >
               <a href="mailto:bavkudhail@gmail.com" target=”_blank”" class="social">
                 <svg 
               xmlns="http://www.w3.org/2000/svg" 
-              fill="#eb59a7"
+              fill="#0c0e3f"
               width="50" 
               height="50" 
               viewBox="0 0 24 24">

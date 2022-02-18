@@ -20,8 +20,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 footer {
-  border-top: 1px solid #eb59a7;
-  background-color: var(--primaryColor1);
+  border-top: 1px solid #0c0e3f;
+  background-color: var(--secondaryColor1);
   color: white;
   text-align: center;
   padding: 100px;
@@ -78,6 +78,8 @@ li {
 /* ============ Hero Section ================== */
 .hero {
   height: 100vh;
+  padding: 2rem;
+  background-color: var(--primaryColor1);
 }
 
 .hero-container {
@@ -88,6 +90,7 @@ li {
   align-items: center;
   background-color: var(--primaryColor1);
   color: #fff;
+  text-align: center;
 }
 .hero-header {
   font-size: 4rem;
@@ -125,6 +128,17 @@ li {
   font-size: 1.2rem;
   margin: 50px 0;
 }
+.resume-btn {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  background-color: var(--secondaryColor1);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+}
 .btn {
   margin-top: 50px;
   font-size: 1rem;
@@ -160,7 +174,7 @@ li {
 
 /* ============ About Section ================== */
 .sub-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .sub-section {
   display: flex;
@@ -171,7 +185,7 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 100px;
+  padding: 2rem;
 }
 .section-intro {
   margin: 20px 0;
@@ -194,6 +208,10 @@ li {
   background-color: var(--primaryColor1);
   color: white;
 }
+.accent-section-pink {
+  background-color: var(--secondaryColor1);
+  color: white;
+}
 .skill-container {
   display: flex;
   flex-wrap: wrap;
@@ -212,24 +230,24 @@ li {
 }
 
 /* ============ Project Section ================== */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .project-card {
-  width: 300px;
-  height: 500px;
   box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
   margin: 30px;
   border-radius: 30px;
+  background-color: #fff;
+  color: black;
 }
-.project-card.large {
+/* .project-card.large {
   width: 600px;
 }
 .project-card.larger {
   width: 900px;
-}
-.project-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+} */
 .project-information {
   display: flex;
   flex-direction: column;
@@ -246,8 +264,6 @@ li {
 }
 
 .project-links {
-  display: flex;
-  justify-content: center;
 }
 .subtext {
   margin: 20px;
@@ -263,7 +279,7 @@ li {
 
 .project-image-large {
   border-radius: 30px;
-  width: 800px;
+  width: 300px;
   height: 300px;
   object-fit: cover;
 }
@@ -304,7 +320,7 @@ hr {
   margin-top: 50px;
 }
 .contact-data {
-  color: #eb7db8;
+  color: #0c0e3f;
   font-weight: bold;
 }
 .contact-form input,
